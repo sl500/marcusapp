@@ -1,0 +1,131 @@
+Quick setup — if you’ve done this kind of thing before
+	
+ HTTPS
+https://github.com/sl500/lindesapp.git
+or
+ SSH
+git@github.com:sl500/lindesapp.git
+
+
+
+We recommend every repository include a README, LICENSE, and .gitignore.
+…or create a new repository on the command line
+
+echo "# lindesapp" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/sl500/lindesapp.git
+or
+git remote add origin git@github.com:sl500/lindesapp.git
+git push -u origin master
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/sl500/lindesapp.git
+git push -u origin master
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+Import code
+ ProTip! Use the URL for this page when adding GitHub as a remote.
+
+Erstellen von repo
+1. mkdir irgendeinfoldernamehier
+2. cd derfoldernamehier
+3. git clone https://github.com/sl500/lindesapp
+4. cd lindesapp
+5. npm install
+6. ng serve
+
+lokale version zum uploaden/pushen
+1. git status
+2. git add *
+3. git status
+4. git commit -m "message"
+
+
+Remote zum uploaden/push vorbereiten
+git remote -v
+git remote add lindesapp https://github.com/sl500/lindesapp.git
+git remote -v
+
+lokale version zum remote uploaden/push 
+git push -u lindesapp master
+
+git history
+
+root@lexX230Lubuntu:~/_learn/lindesapp/src/app# history | grep git
+  924  curl https://raw.githubusercontent.com/docker/docker/master/contrib/check-config.sh > check-config.sh
+ 1075  git
+ 1138  git status
+ 1139  git --help
+ 1140  git clone https://github.com/sl500/angular5tutapp.git
+ 1149  git clone https://github.com/sl500/angular5tutapp.git
+ 1171  git remote add origin git@github.com:sl500/lindesapp.git
+ 1172  git remote
+ 1173  git remote -v
+ 1174  git remote add origin https://github.com/sl500/lindesapp.git
+ 1175  git remote add lindesapp https://github.com/sl500/lindesapp.git
+ 1176  git remote -v
+ 1177  git push -u lindesapp master
+ 1178  git status
+ 1179  git add *
+ 1180  git status
+ 1181  git commit -m "doku git added"
+ 1182  git branch
+ 1183  git push -u lindesapp master
+ 1186  git clone https://github.com/sl500/lindesapp
+ 1262  sudo ack-grep -i "git@github.com:sl500/lindesapp.git"
+ 1273  git status
+ 1274  git log
+ 1277  sudo ack-grep -i "git push"
+ 1279  sudo ack-grep -i "git@github.com:sl500/lindesapp.git"
+ 1282  sudo ack-grep -i "git@github.com:sl500/lindesapp.git"
+ 1283  git clone https://github.com/sl500/lindesapp
+ 1291  git status
+ 1292  git checkout --
+ 1293  git status
+ 1294  git checkout -- *
+ 1295  git checkout -- user.component.ts
+ 1296  git checkout -- src/app/user/user.component.ts
+ 1297  git status
+ 1301  git clone https://github.com/sl500/lindesapp
+ 1307  git status
+ 1308  git fetch --all
+ 1309  git fetch --hard origin/master
+ 1310  git reset --hard origin/master
+ 1311  git status
+ 1316  git status
+ 1317  git add *
+ 1318  git commit -m "unnötige components deleted"
+ 1319  git add *
+ 1320  git status
+ 1321  git diff
+ 1322  git fetch --hard origin/master
+ 1323  git fetch
+ 1324  git reset --hard origin/master
+ 1325  git status
+ 1327  git rm ./bitches
+ 1328  git rm -r ./bitches
+ 1329  git rm -r ./user
+ 1330  git status
+ 1331  git commit -m "unnötige components deleted"
+ 1332  git status
+ 1333  git push -u lindesapp master
+ 1334  git push
+ 1335  git remote -v
+ 1336  git status
+ 1337  git add *
+ 1338  git status
+ 1339  sudo git add *
+ 1340  git status
+ 1342  git add *
+ 1343  git status
+ 1344  git commit -m "bessere doku!"
+ 1345  git push
+ 1346  git remote add lindesapp https://github.com/sl500/lindesapp.git
+ 1347  git remote -v
+ 1348  git clone https://github.com/sl500/lindesapp
+ 1361  history | grep "git rm"
+ 1362  history | grep git
+root@lexX230Lubuntu:~/_learn/lindesapp/src/app# git rm -r ./bitchesgit rm -r ./bitchesgit rm -r ./bitches

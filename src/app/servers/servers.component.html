@@ -1,0 +1,52 @@
+<label>Server Name</label>
+<!-- <input
+  type="text"
+  class="form-control"
+  (input)="onUpdateServerName($event)"> -->
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="serverName">
+  <!-- <p>{{ serverName }}</p> -->
+<button
+class="btn btn-primary"
+[disabled]="!allowNewServer"
+(click)="onCreateServer()">Add Server</button>
+<!-- <p>disabled=<p [innerText]="!allowNewServer"></p> -->
+<!-- <p>{{ serverCreationStatus }}</p> -->
+<p *ngIf="serverWasCreated">Server was created! Name is {{ serverName }}</p>
+
+<app-server *ngFor="let server of servers"></app-server>
+<!-- <app-server></app-server> -->
+
+<!-- <label>User Name</label> -->
+
+<!-- <input
+type="text"
+class="form-control"
+[(ngModel)]="userName">
+<p> {{ userName }}</p>  -->
+
+<!-- <button
+class="btn btn-primary"
+[disabled]="userName === ''"
+(click)="onResetUser()">Reset User</button> -->
+<!-- <p>disabled=<p [innerText]="!allowNewServer"></p> -->
+<!-- <p>{{ userCreationStatus }}</p> -->
+
+
+  <!-- Für Variante 1 bis 3 -->
+  <button
+class="btn btn-primary"
+[disabled]=""
+(click)="onShowPassword()">Display Details</button>
+
+<!-- Variante 4 ohne ts code, mit inline code -->
+<!-- <button
+class="btn btn-primary"
+[disabled]=""
+(click)="showSecretPassword=!showSecretPassword">Display Details</button> -->
+
+<p *ngIf="showSecretPassword">Secret Password = KissMyAss </p>
+<p>Counter: {{ buttonClickCounter }}</p>
+<p *ngFor="let clicks of buttonClickLogArray">{{clicks}}</p>
